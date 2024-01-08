@@ -4,7 +4,7 @@ using NineLivesCatRescueLibrary.ApiClients;
 using NineLivesCatRescueLibrary.Enums;
 using NineLivesCatRescueLibrary.Models;
 
-namespace NineLivesCatRescue.Managers;
+namespace NineLivesCatRescueApi.Managers;
 
 public class RescueGroupsManager
 {

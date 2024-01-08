@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using NineLivesCatRescue.Managers;
+using NineLivesCatRescueApi.Managers;
 using Serilog;
 
-namespace NineLivesCatRescue.Controllers
+namespace NineLivesCatRescueApi.Controllers
 {
     [Route("api/rescue-groups")]
     [ApiController]
