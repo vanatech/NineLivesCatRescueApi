@@ -16,11 +16,18 @@ builder.Services.AddScoped<SubmitApplicationApiClient>();
 builder.Services.AddScoped<NineLivesStateManagementModel>();
 builder.Services.AddScoped<RescueGroupsManager>();
 
+builder.Services.AddCors(policyBuilder =>
+	policyBuilder.AddDefaultPolicy(policy =>
+		policy.WithOrigins("*")
+			.AllowAnyHeader())
+);
+
 var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
 
+app.UseCors();
 
 app.UseHttpsRedirection();
 
