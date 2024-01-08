@@ -19,7 +19,7 @@ jobs:
       - name: App Settings Variable Substitution
         uses: microsoft/variable-substitution@v1
         with:
-          files: '${{env.DOTNET_ROOT}}/NineLivesCatRescueApi/appsettings.json'
+          files: '**/appsettings.json'
         env:
           RescueGroupsApiKey: ${{ secrets.RESCUEGROUPSAPIKEY }}
 
