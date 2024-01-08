@@ -19,6 +19,7 @@ namespace NineLivesCatRescueApi.Controllers
         [HttpGet]
         public async Task<string> GetAvailableCatsByFilter()
         {
+            string error;
             try
             {
                 var result = await _rescueGroupsManager.GetAvailableCatsByFilter().ConfigureAwait(false);
@@ -27,15 +28,17 @@ namespace NineLivesCatRescueApi.Controllers
             catch (Exception e)
             {
                 Log.Logger.Error(e.ToString());
+                error = e.ToString();
             }
 
-            return "";
+            return error;
         }
 
         [Route("available/featured")]
         [HttpGet]
         public async Task<string> GetFeaturedCats()
         {
+            string error;
             try
             {
                 var result = await _rescueGroupsManager.GetFeaturedCats().ConfigureAwait(false);
@@ -44,9 +47,10 @@ namespace NineLivesCatRescueApi.Controllers
             catch (Exception e)
             {
                 Log.Logger.Error(e.ToString());
+                error = e.ToString();
             }
 
-            return "";
+            return error;
         }
         
         /*[Route("organization")]
