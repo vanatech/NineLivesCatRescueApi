@@ -8,7 +8,95 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.9"/>
+        <PackageReference Include="RestSharp" Version="110.2.1-alpha.0.16" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="NineLivesCatRescueLibrary\obj\NineLivesCatRescueLibrary.csproj.nuget.dgspec.json" />
+      <_ContentIncludedByDefault Remove="NineLivesCatRescueLibrary\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="NineLivesCatRescueLibrary\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="NineLivesCatRescueLibrary\bin\Debug\net7.0\NineLivesCatRescueLibrary.deps.json" />
+      <_ContentIncludedByDefault Remove="NineLivesCatRescueLibrary\obj\Debug\net7.0\NineLivesCatRescueLibrary.sourcelink.json" />
+      <_ContentIncludedByDefault Remove="NineLivesCatRescueLibrary\obj\NineLivescCatRescueLibrary.csproj.nuget.dgspec.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="NineLivesCatRescueLibrary\ApiClient\RescueGroupsApiClient.cs">
+        <Link>NineLivescCatRescueLibrary\ApiClient\RescueGroupsApiClient.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\ApiClient\SubmitApplicationApiClient.cs">
+        <Link>NineLivescCatRescueLibrary\ApiClient\SubmitApplicationApiClient.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\FosterFormModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\FosterFormModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\ContactInfoModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\ContactInfoModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\AdoptionFormModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\AdoptionFormModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\AttributesModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\AttributesModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\AvailableCatModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\AvailableCatModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\CatModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\CatModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\ContactFormModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\ContactFormModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\DataDetailModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\DataDetailModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\DataModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\DataModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\ImageDetailsModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\ImageDetailsModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\IncludedModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\IncludedModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\LinksModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\LinksModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\MetaModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\MetaModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\NineLivesStateManagementModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\NineLivesStateManagementModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\RelationshipModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\RelationshipModel.cs</Link>
+      </Compile>
+      <Compile Update="NineLivesCatRescueLibrary\Models\RootModel.cs">
+        <Link>NineLivescCatRescueLibrary\Models\RootModel.cs</Link>
+      </Compile>
+      <Compile Remove="NineLivesCatRescueLibrary\Enums\**" />
+      <Compile Remove="NineLivesCatRescueLibrary\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="NineLivesCatRescueLibrary\Enums\**" />
+      <EmbeddedResource Remove="NineLivesCatRescueLibrary\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="NineLivesCatRescueLibrary\Enums\**" />
+      <Content Remove="NineLivesCatRescueLibrary\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="NineLivesCatRescueLibrary\Enums\**" />
+      <None Remove="NineLivesCatRescueLibrary\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="NineLivesCatRescueLibrary\NineLivesCatRescueLibrary.csproj" />
     </ItemGroup>
 
 </Project>

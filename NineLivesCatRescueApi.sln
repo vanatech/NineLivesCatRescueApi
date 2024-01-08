@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NineLivesCatRescueApi", "NineLivesCatRescueApi.csproj", "{E7F5165F-FC53-439B-9719-AEE0BC2B9000}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NineLivesCatRescueLibrary", "NineLivesCatRescueLibrary\NineLivesCatRescueLibrary.csproj", "{8246261E-C7AC-428A-9457-01AFE2C87734}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NineLivesCatRescueLibrary", "NineLivesCatRescueLibrary\NineLivesCatRescueLibrary.csproj", "{90FC2C30-3FE2-454A-B9A5-FD3323F7185A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +14,9 @@ Global
 		{E7F5165F-FC53-439B-9719-AEE0BC2B9000}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7F5165F-FC53-439B-9719-AEE0BC2B9000}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7F5165F-FC53-439B-9719-AEE0BC2B9000}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8246261E-C7AC-428A-9457-01AFE2C87734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8246261E-C7AC-428A-9457-01AFE2C87734}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8246261E-C7AC-428A-9457-01AFE2C87734}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8246261E-C7AC-428A-9457-01AFE2C87734}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90FC2C30-3FE2-454A-B9A5-FD3323F7185A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90FC2C30-3FE2-454A-B9A5-FD3323F7185A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90FC2C30-3FE2-454A-B9A5-FD3323F7185A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90FC2C30-3FE2-454A-B9A5-FD3323F7185A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

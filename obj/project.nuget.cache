@@ -1,16 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "RGipAxpbarJiY8nCEzxzlRoUNzpSzkh/FIyjbzJlyzutPGgFJ8woH3pN6E3IgMr9ZgtcLs/dpyp3cixocqSfhA==",
+  "dgSpecHash": "0NDmtE4RZskC6bAMCVLc2oNBDBG5dMrL3oTVNb8bM0f1ZVz97fju1ly9Jm+iSeZfZIxla1mKjlQ3OhSz8fiJ4A==",
   "success": true,
   "projectFilePath": "/Users/whitneyatkinson/RiderProjects/NineLivesCatRescueApi/NineLivesCatRescueApi.csproj",
   "expectedPackageFiles": [
     "/Users/whitneyatkinson/.nuget/packages/microsoft.aspnetcore.openapi/7.0.9/microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
     "/Users/whitneyatkinson/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/whitneyatkinson/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "/Users/whitneyatkinson/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "/Users/whitneyatkinson/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "/Users/whitneyatkinson/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/whitneyatkinson/.nuget/packages/restsharp/110.2.1-alpha.0.16/restsharp.110.2.1-alpha.0.16.nupkg.sha512",
     "/Users/whitneyatkinson/.nuget/packages/swashbuckle.aspnetcore/6.5.0/swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "/Users/whitneyatkinson/.nuget/packages/swashbuckle.aspnetcore.swagger/6.5.0/swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
     "/Users/whitneyatkinson/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
-    "/Users/whitneyatkinson/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+    "/Users/whitneyatkinson/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
+    "/Users/whitneyatkinson/.nuget/packages/system.text.encodings.web/7.0.0/system.text.encodings.web.7.0.0.nupkg.sha512",
+    "/Users/whitneyatkinson/.nuget/packages/system.text.json/7.0.3/system.text.json.7.0.3.nupkg.sha512"
   ],
   "logs": []
 }
