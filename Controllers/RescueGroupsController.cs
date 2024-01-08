@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using NineLivesCatRescue.Managers;
+using Serilog;
 
 namespace NineLivesCatRescue.Controllers
 {
@@ -18,16 +19,34 @@ namespace NineLivesCatRescue.Controllers
         [HttpGet]
         public async Task<string> GetAvailableCatsByFilter()
         {
-            var result = await _rescueGroupsManager.GetAvailableCatsByFilter().ConfigureAwait(false);
-            return result;
+            try
+            {
+                var result = await _rescueGroupsManager.GetAvailableCatsByFilter().ConfigureAwait(false);
+                return result;
+            }
+            catch (Exception e)
+            {
+                Log.Logger.Error(e.ToString());
+            }
+
+            return "";
         }
 
         [Route("available/featured")]
         [HttpGet]
         public async Task<string> GetFeaturedCats()
         {
-            var result = await _rescueGroupsManager.GetFeaturedCats().ConfigureAwait(false);
-            return result;
+            try
+            {
+                var result = await _rescueGroupsManager.GetFeaturedCats().ConfigureAwait(false);
+                return result;
+            }
+            catch (Exception e)
+            {
+                Log.Logger.Error(e.ToString());
+            }
+
+            return "";
         }
         
         /*[Route("organization")]
