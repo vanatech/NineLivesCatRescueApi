@@ -21,7 +21,7 @@ jobs:
         with:
           files: '**/appsettings.json'
         env:
-          RescueGroupsApiKey: ${{ secrets.RESCUEGROUPSAPIKEY }}
+          RescueGroupsApiKey: testValue
 
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
