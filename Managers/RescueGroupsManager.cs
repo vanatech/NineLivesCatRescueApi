@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Web;
+using NineLivesCatRescueLibrary;
 using NineLivesCatRescueLibrary.ApiClients;
 using NineLivesCatRescueLibrary.Enums;
 using NineLivesCatRescueLibrary.Models;
@@ -9,10 +10,12 @@ namespace NineLivesCatRescueApi.Managers;
 public class RescueGroupsManager
 {
     private RescueGroupsApiClient _rescueGroupsApiClient;
+    private SubmitApplicationApiClient _submitApplicationApiClient;
     
-    public RescueGroupsManager(RescueGroupsApiClient rescueGroupsApiClient)
+    public RescueGroupsManager(RescueGroupsApiClient rescueGroupsApiClient, SubmitApplicationApiClient submitApplicationApiClient)
     {
         _rescueGroupsApiClient = rescueGroupsApiClient;
+        _submitApplicationApiClient = submitApplicationApiClient;
     }
 
     public async Task<string> GetFeaturedCats()
@@ -21,7 +24,9 @@ public class RescueGroupsManager
         
         var featuredCats = ProcessCats(result);
 
-        var catArray = featuredCats.Where(x=> x.Attributes.Name != "Barn cats" && x.Attributes.Name != "Expert Mouser")
+        var catArray = featuredCats.Where(x=> x.Attributes.Name != "Barn cats" 
+                                            && x.Attributes.Name != "Expert Mouser" 
+                                            && !String.IsNullOrEmpty(x.Attributes.AvailableDate.ToString()))
             .OrderBy(x => x.Attributes.AvailableDate)
             .Take(3)
             .ToArray();
@@ -97,4 +102,9 @@ public class RescueGroupsManager
         
         return animalPictures.FirstOrDefault(x => x.Attributes.Order == 1).Attributes.Original.Url;
     }
+
+    // public async Task<bool> SaveAdoptionApplication(AdoptionFormModel adoptionFormModel)
+    // {
+    //     
+    // }
 }

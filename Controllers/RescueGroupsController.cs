@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using NineLivesCatRescueApi.Managers;
+using NineLivesCatRescueLibrary.Models;
 using Serilog;
 
 namespace NineLivesCatRescueApi.Controllers
@@ -53,39 +54,39 @@ namespace NineLivesCatRescueApi.Controllers
             return error;
         }
         
-        /*[Route("organization")]
-        [HttpGet]
-        public async Task<RootModel> GetOrganizationInfo()
-        {
-            var organization = await _rescueGroupsApiClient.GetOrganizationInfoAsync().ConfigureAwait(false);
-            return organization;
-        }
+        // [Route("organization")]
+        // [HttpGet]
+        // public async Task<RootModel> GetOrganizationInfo()
+        // {
+        //     var organization = await _rescueGroupsApiClient.GetOrganizationInfoAsync().ConfigureAwait(false);
+        //     return organization;
+        // }
 
-        [Route("adoption-application")]
-        [HttpPost]
-        public async Task<bool> SubmitAdoptionApplication([FromBody] AdoptionFormModel adoptionForm)
-        {
-            bool success = await _submitApplicationApiClient.SubmitAdoptionApplication(adoptionForm)
-                .ConfigureAwait(false);
-            return success;
-        }
+        // [Route("adoption-application")]
+        // [HttpPost]
+        // public async Task<bool> SubmitAdoptionApplication([FromBody] AdoptionFormModel adoptionForm)
+        // {
+        //     bool success = await _rescueGroupsManager.SaveAdoptionApplication(adoptionForm)
+        //         .ConfigureAwait(false);
+        //     return success;
+        // }
 
-        [Route("foster-application")]
-        [HttpPost]
-        public async Task<bool> SubmitFosterApplication([FromBody] FosterFormModel fosterForm)
-        {
-            bool success = await _submitApplicationApiClient.SubmitFosterApplication(fosterForm)
-                .ConfigureAwait(false);
-            return success;
-        }
-
-        [Route("contact-form")]
-        [HttpPost]
-        public async Task<bool> SubmitContactForm([FromBody] ContactFormModel contactForm)
-        {
-            bool success = await _submitApplicationApiClient.SubmitContactForm(contactForm)
-                .ConfigureAwait(false);
-            return success;
-        }*/
+        // [Route("foster-application")]
+        // [HttpPost]
+        // public async Task<bool> SubmitFosterApplication([FromBody] FosterFormModel fosterForm)
+        // {
+        //     bool success = await _submitApplicationApiClient.SubmitFosterApplication(fosterForm)
+        //         .ConfigureAwait(false);
+        //     return success;
+        // }
+        //
+        // [Route("contact-form")]
+        // [HttpPost]
+        // public async Task<bool> SubmitContactForm([FromBody] ContactFormModel contactForm)
+        // {
+        //     bool success = await _submitApplicationApiClient.SubmitContactForm(contactForm)
+        //         .ConfigureAwait(false);
+        //     return success;
+        // }
     }
 }
